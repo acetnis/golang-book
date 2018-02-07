@@ -6,4 +6,7 @@
 
 **Job Title:** *Politician*
 
-## Chapter 1
+## Chapter 2
+
+* chapter2-1: My first program
+* chapter2-2: My name program
