@@ -15,3 +15,4 @@
 
 * chapter3-1: Zero Value
 * chapter3-2: Backticks
+* chapter3-3: Float
