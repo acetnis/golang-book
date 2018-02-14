@@ -33,4 +33,15 @@
 * chapter6-3: function#3
 * chapter6-4: variadic function
 
+## Chapter 7
+
+* chapter7-1: array
+* chapter7-2: slice
+* chapter7-3: slice
+* chapter7-4: copy slice
+* chapter7-5: map
+* chapter7-6: delete map
+* chapter7-7: avoid to check zero value
+* chapter7-8: range: array
+* chapter7-9: range: slice
 
