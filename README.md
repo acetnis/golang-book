@@ -25,4 +25,4 @@
 
 * chapter6-1: function
 * chapter6-2: function#2
-
+* chapter6-3: function#3
