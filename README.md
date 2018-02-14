@@ -21,3 +21,8 @@
 
 * chapter4-1: Variable Declaration
 
+## Chapter 6
+
+* chapter6-1: function
+* chapter6-2: function#2
+
