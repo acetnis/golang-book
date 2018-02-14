@@ -21,8 +21,16 @@
 
 * chapter4-1: Variable Declaration
 
+## Chapter 4
+
+* chapter5-2: If
+
+
 ## Chapter 6
 
 * chapter6-1: function
 * chapter6-2: function#2
 * chapter6-3: function#3
+* chapter6-4: variadic function
+
+
