@@ -44,4 +44,9 @@
 * chapter7-7: avoid to check zero value
 * chapter7-8: range: array
 * chapter7-9: range: slice
+* chapter7-10: range: map
+* chapter7-11: range: string
 
+## Exercise
+
+* exercise 1: quiz weather 
