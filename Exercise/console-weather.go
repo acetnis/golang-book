@@ -10,46 +10,21 @@ func main() {
 }
 
 func weatherCelsuis(num int,str string) {
-	if num == 25 {
-		fmt.Println(" _   _")
-		fmt.Println(" _| |_")
-		fmt.Print("|_   _|")
-		fmt.Println("  c")
-		fmt.Printf("%v\n", str)
-	}
-	if num == 34 {
-		fmt.Println(" _   ")
-		fmt.Println(" _| |_|")
-		fmt.Print(" _|   |")
-		fmt.Println("  c")
-		fmt.Printf("%v\n", str)
-	}
-	if num == 17 {
-		fmt.Println("     _")
-		fmt.Println("  |   |")
-		fmt.Print("  |   |")
-		fmt.Println("  c")
-		fmt.Printf("%v\n", str)
-	}
-	if num == 9 {
-		fmt.Println(" _ ")
-		fmt.Println("|_|")
-		fmt.Print(" _|")
-		fmt.Println("  c")
-		fmt.Printf("%v\n", str)
-	}
-	if num == 10 {
-		printnum(1,1)
+	
+	p1 := num%10
+	p2 := (num - p1) / 10
+	if num < 100 {
+		printnum(p2,1)
 		fmt.Print(" ")
-		printnum(0,1)
+		printnum(p1,1)
 		fmt.Println()
-		printnum(1,2)
+		printnum(p2,2)
 		fmt.Print(" ")
-		printnum(0,2)
+		printnum(p1,2)
 		fmt.Println()
-		printnum(1,3)
+		printnum(p2,3)
 		fmt.Print(" ")
-		printnum(0,3)
+		printnum(p1,3)
 		fmt.Println("  c")
 		fmt.Printf("%v\n", str)
 	}
@@ -72,6 +47,78 @@ func printnum(n int,pos int) {
 			fmt.Print("  |")
 		} else if pos == 3 {
 			fmt.Print("  |")
+		}
+	}
+	if n == 2 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print(" _|")
+		} else if pos == 3 {
+			fmt.Print("|_ ")
+		}
+	}
+	if n == 3 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print(" _|")
+		} else if pos == 3 {
+			fmt.Print(" _|")
+		}
+	}
+	if n == 4 {
+		if pos == 1 {
+			fmt.Print("   ")
+		} else if pos == 2 {
+			fmt.Print("|_|")
+		} else if pos == 3 {
+			fmt.Print("  |")
+		}
+	}
+	if n == 5 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print("|_ ")
+		} else if pos == 3 {
+			fmt.Print(" _|")
+		}
+	}
+	if n == 6 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print("|_ ")
+		} else if pos == 3 {
+			fmt.Print("|_|")
+		}
+	}
+	if n == 7 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print("  |")
+		} else if pos == 3 {
+			fmt.Print("  |")
+		}
+	}
+	if n == 8 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print("|_|")
+		} else if pos == 3 {
+			fmt.Print("|_|")
+		}
+	}
+	if n == 9 {
+		if pos == 1 {
+			fmt.Print(" _ ")
+		} else if pos == 2 {
+			fmt.Print("|_|")
+		} else if pos == 3 {
+			fmt.Print(" _|")
 		}
 	}
 }
