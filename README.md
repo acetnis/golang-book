@@ -32,6 +32,7 @@
 * chapter6-2: function#2
 * chapter6-3: function#3
 * chapter6-4: variadic function
+* chpater6-5: refactor from 5-2
 
 ## Chapter 7
 
@@ -46,6 +47,29 @@
 * chapter7-9: range: slice
 * chapter7-10: range: map
 * chapter7-11: range: string
+
+## Chapter 8
+
+* chapter8-1: pointer
+* chapter8-2: pass by pointer
+* chapter8-3: pass by array value
+* chapter8-4: pass by pointer array value
+* chapter8-5: pass by slice value
+* chapter8-6: pass by map value
+* chapter8-7: pass by map value
+
+## Chapter 9
+
+* chapter9-1: type
+* chapter9-2: specific type
+
+## Chapter 10
+
+* chapter10-1: method
+
+## Chapter 11
+
+* chapter11-1: interface
 
 ## Exercise
 
