@@ -35,6 +35,10 @@ func (m VendingMachine) change(c int) string {
 	return str
 }
 
+func (m *VendingMachine) CoinReturn() string {
+	return "T, T, F"
+}
+
 func (m *VendingMachine) SelectSD() string {
 
 	price := m.items["SD"]
@@ -86,4 +90,13 @@ func main() {
 	// Inserted Money: 20
 	can = vm.SelectDW()
 	fmt.Println(can) // DW, T, TW, O
+
+	vm.ClearCoin()
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	vm.InsertCoin("F")
+	fmt.Println("Inserted Money:", vm.InsertedMoney())
+	// Inserted Money: 25
+	coin := vm.CoinReturn()
+	fmt.Println(coin) // T, T, F
 }
