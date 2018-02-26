@@ -29,14 +29,17 @@ func (m VendingMachine) change(c int) string {
 		if c >= values[i] {
 			str += ", " + coins[i]
 			c -= values[i]
+			i--
 		}
 	}
 	
 	return str
 }
 
-func (m *VendingMachine) CoinReturn() string {
-	return "T, T, F"
+func (vm *VendingMachine) CoinReturn() string {
+	coins := vm.change(vm.insertedMoney)
+	vm.insertedMoney = 0
+	return coins[2:len(coins)]
 }
 
 func (m *VendingMachine) SelectSD() string {
@@ -98,5 +101,5 @@ func main() {
 	fmt.Println("Inserted Money:", vm.InsertedMoney())
 	// Inserted Money: 25
 	coin := vm.CoinReturn()
-	fmt.Println(coin) // T, T, F
+	fmt.Println("Returned Coin:", coin) // T, T, F
 }
