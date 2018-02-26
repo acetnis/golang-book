@@ -89,8 +89,9 @@ func main() {
 	vm.ClearCoin()
 	vm.InsertCoin("T")
 	vm.InsertCoin("T")
+	vm.InsertCoin("T")
 	fmt.Println("Inserted Money:", vm.InsertedMoney())
-	// Inserted Money: 20
+	// Inserted Money: 30
 	can = vm.SelectDW()
 	fmt.Println(can) // DW, T, TW, O
 
