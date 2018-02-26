@@ -74,3 +74,4 @@
 ## Exercise
 
 * exercise 1: quiz weather 
+* exercise 2: Vending Machine
