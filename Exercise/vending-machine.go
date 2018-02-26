@@ -49,6 +49,13 @@ func (m *VendingMachine) SelectCC() string {
 	return "CC" + m.change(change)
 }
 
+func (m *VendingMachine) SelectDW() string {
+	
+	price := m.items["DW"]
+	change := m.insertedMoney - price
+	return "DW" + m.change(change)
+}
+
 func main() {
 	var coins = map[string]int{"T": 10, "F": 5, "TW": 2, "O": 1}
 	var items = map[string]int{"SD": 18, "CC": 12, "DW": 7}
@@ -71,4 +78,12 @@ func main() {
 	// Inserted Money: 20
 	can = vm.SelectCC()
 	fmt.Println(can) // CC, F, TW, O
+
+	vm.ClearCoin()
+	vm.InsertCoin("T")
+	vm.InsertCoin("T")
+	fmt.Println("Inserted Money:", vm.InsertedMoney())
+	// Inserted Money: 20
+	can = vm.SelectDW()
+	fmt.Println(can) // DW, T, TW, O
 }
