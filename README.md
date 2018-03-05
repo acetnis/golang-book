@@ -71,6 +71,24 @@
 
 * chapter11-1: interface
 
+## Chapter 12
+
+* chapter12-1: first class funtion
+* chapter12-2: first class funtion
+* chapter12-3: first class funtion
+* chapter12-fizzbuzz: use function in fizzbuzz problem
+
+## Chapter 13
+
+* chapter13-1: goroutine
+* chapter13-2: goroutine
+* chapter13-3: goroutine
+* chapter13-4: goroutine Add/Wait/Done
+* chapter13-5: goroutine race condition
+* chapter13-6: goroutine race condition (atomic)
+
+
+
 ## Exercise
 
 * exercise 1: quiz weather 
