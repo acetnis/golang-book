@@ -12,28 +12,18 @@ func main() {
 }
 
 func fizzbuzz(number int) string {
-	fizzBuzzFunc := func(n int) (string, bool) {
-		if n%15 == 0 {
-			return "FizzBuzz", true
+	fbTemplate := func(fbnumber int, str string) func(n int) (string, bool) {
+		return func(n int) (string, bool) {
+			if n%fbnumber == 0 {
+				return str, true
+			}
+			return "", false
 		}
-		return "", false
-	}
-	fizzFunc := func(n int) (string, bool) {
-		if n%3 == 0 {
-			return "Fizz", true
-		}
-		return "", false
-	}
-	buzzFunc := func(n int) (string, bool) {
-		if n%5 == 0 {
-			return "buzz", true
-		}
-		return "", false
 	}
 	fbArray := [...]func(n int) (string, bool){
-		fizzBuzzFunc,
-		buzzFunc,
-		fizzFunc,
+		fbTemplate(15, "FizzBuzz"),
+		fbTemplate(3, "Fizz"),
+		fbTemplate(5, "Buzz"),
 	}
 
 	for i := 0; i < len(fbArray); i++ {
