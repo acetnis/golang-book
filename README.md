@@ -21,7 +21,7 @@
 
 * chapter4-1: Variable Declaration
 
-## Chapter 4
+## Chapter 5
 
 * chapter5-2: If
 
@@ -85,9 +85,21 @@
 * chapter13-3: goroutine
 * chapter13-4: goroutine Add/Wait/Done
 * chapter13-5: goroutine race condition
-* chapter13-6: goroutine race condition (atomic)
-
-
+* chapter13-6: atomic
+* chapter13-7: mutex
+* chapter13-8: deadlock
+* chapter13-9: channel
+* chapter13-10: unbuffered channel
+* chapter13-11: buffered channel
+* chapter13-12: buffered overfilled
+* chapter13-13: goroutine leak
+* chapter13-14: channel-direction
+* chapter13-15: channel-direction (close channel)
+* chapter13-16: channel-select
+* chapter13-17: pipeline #1
+* chapter13-18: pipeline #2
+* chapter13-19: pipeline #3
+* chapter13-20: timeout
 
 ## Exercise
 
