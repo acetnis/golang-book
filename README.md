@@ -105,3 +105,4 @@
 
 * exercise 1: quiz weather 
 * exercise 2: Vending Machine
+* exercise 4: Speedy Espresso
