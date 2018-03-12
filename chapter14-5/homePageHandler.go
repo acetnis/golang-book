@@ -7,10 +7,10 @@ import (
 )
 
 type User struct {
-	FirstName string
-	LastName  string
-	Email     string
-	CreatedAt time.Time
+	FirstName string    `json:"first_name"`
+	LastName  string    `json:"last_name"`
+	Email     string    `json:"email"`
+	CreatedAt time.Time `json:"created_at"`
 }
 
 type HomePageHandler struct{}
