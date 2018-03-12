@@ -101,6 +101,11 @@
 * chapter13-19: pipeline #3
 * chapter13-20: timeout
 
+## Chapter 14
+
+* chapter14-1: net/http
+* chapter14-2: net/http query string
+
 ## Exercise
 
 * exercise 1: quiz weather 
